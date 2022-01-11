@@ -1,14 +1,8 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { MatTable } from '@angular/material/table';
+import { Pessoa } from 'src/app/models/Pessoa';
 import { ElementDialogComponent } from 'src/app/shared/element-dialog/element-dialog.component';
-
-export interface Pessoa {
-  name: string;
-  position: number;
-  email: string;
-  blodType: string;
-}
 
 const ELEMENT_DATA: Pessoa[] = [
   {position: 1, name: 'Sophia', email: 'email.email@email.com', blodType: 'A+'},

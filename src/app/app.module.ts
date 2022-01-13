@@ -23,7 +23,7 @@ import { FormsModule } from '@angular/forms';
     HomeComponent,
     HeaderComponent,
     FooterComponent,
-    ElementDialogComponent
+    ElementDialogComponent,
   ],
   imports: [
     BrowserModule,

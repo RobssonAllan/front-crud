@@ -25,6 +25,7 @@ const ELEMENT_DATA: Pessoa[] = [
 export class HomeComponent implements OnInit {
   @ViewChild(MatTable)
   table!: MatTable<any>;
+  logar!: boolean;
   displayedColumns: string[] = ['position', 'name', 'email', 'blodType', 'edit', 'delete'];
   dataSource = ELEMENT_DATA;
   
@@ -68,5 +69,9 @@ export class HomeComponent implements OnInit {
 
   editElement(element: Pessoa): void{
     this.openDialog(element);
+  }
+
+  login(): void{
+
   }
 }
